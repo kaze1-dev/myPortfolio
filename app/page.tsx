@@ -1,7 +1,12 @@
 import Image from "next/image";
-
-export default function Home() {
+import { Button, buttonVariants } from "@/components/ui/button";
+import Header from "@/components/layouts/header";
+import Hero from "@/components/modules/hero";
+export default function App() {
   return (
-    <div>Welcome!</div>
+    <>
+    <Header />
+    <Hero />
+    </>
   );
 }
