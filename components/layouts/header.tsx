@@ -5,10 +5,10 @@ import { Icons } from '../icons'
 const Header = () => {
    return (
       <>
-         <header className='flex gap-6 items-center justify-between bg-slate-900 py-4 px-15'>
+         <header className='flex gap-6 items-center justify-between bg-slate-900 py-4 px-15 fixed w-full'>
             <div className='flex gap-6'>
-               <h1 className='text-slate-300 font-bold text-lg font-sans tracking-tighter'>Kaze Faisal</h1>
-               <nav className='text-slate-300 tracking-tighter font-sans font-bold text-sm flex gap-4 justify-center items-center'>
+               <h1 className='text-slate-300 font-bold text-lg font-rounded tracking-tighter'>Kaze Faisal</h1>
+               <nav className='text-slate-300 tracking-tighter font-rounded font-bold text-sm flex gap-4 justify-center items-center'>
                   <div>Home</div>
                   <div>About</div>
                   <div>Experience</div>

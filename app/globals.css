@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -5,11 +7,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Font Mappings */
+  --font-rounded: 'Varela Round', sans-serif;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
-  /* Core Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -30,7 +30,7 @@
 }
 
 :root {
-  --background: #020617;
+  --background: #0F172A;
   --foreground: #FBFBFB;
   --card: #ffffff;
   --primary: #020617;
@@ -47,7 +47,7 @@
   --background: #020617; 
   --foreground: #F1F5F9;
   --card: #0F172A;
-  --primary: #38BDF8; /* Your sky blue accent */
+  --primary: #38BDF8;
   --primary-foreground: #020617;
   --secondary: #1E293B;
   --muted: #1E293B;
@@ -61,6 +61,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-rounded antialiased;
   }
 }

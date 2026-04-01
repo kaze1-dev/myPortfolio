@@ -1,15 +1,21 @@
 import React from 'react'
+import { Button } from '../ui/button'
+import { Icons } from '../icons'
 
 const Hero = () => {
    return (
-      <section className='flex justify-center items-center'>
-         <div className='flex flex-col pt-20 gap-8'>
-         <h1 className='text-slate-300 text-6xl inline tracking-tight font-md'>
-            hi, I'm <span className='text-sky-400'>kaze.</span>
-         </h1>
-         <p className='inline text-sm text-slate-500 font-sans leading-relaxed'>
-           Software Engineering student focused on the intersection of Backend Engineering. I specialize in building high-performance<br /> applications using Node.js, TypeScript, and PostgreSQL. Currently engineering and exploring SaaS monitoring solutions,<br /> with a relentless focus on clean architecture and industry-standard development.
-         </p>
+      <section className='flex justify-center items-center h-screen'>
+         <div className='flex flex-col gap-6'>
+            <h1 className='text-slate-300 text-6xl inline tracking-tight font-rounded'>
+               hi, <span className='text-cyan-300 font-bold'>kaze</span> here.
+            </h1>
+            <p className='inline text-sm text-slate-400 font-rounded leading-relaxed'>
+               Building high-performance web applications at the intersection of Next.js logic and<br /> robust Prisma backends, fueled by a love for clean code and anime.
+            </p>
+            <Button variant='outline' className='w-max hover:bg-cyan-300/10 rounded px-8 py-6 text-cyan-300 hover:text-cyan-300 font-bold border-cyan-300'>
+               <Icons.mail className='text-cyan-300' />
+               Say hi!
+            </Button>
          </div>
       </section>
    )
