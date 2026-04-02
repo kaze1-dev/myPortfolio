@@ -12,7 +12,7 @@ const Hero = () => {
             <p className='inline text-sm text-slate-400 font-rounded leading-relaxed'>
                Building high-performance web applications at the intersection of Next.js logic and<br /> robust Prisma backends, fueled by a love for clean code and anime.
             </p>
-            <Button variant='outline' className='w-max hover:bg-cyan-300/10 rounded px-8 py-6 text-cyan-300 hover:text-cyan-300 font-bold border-cyan-300'>
+            <Button variant='outline' className='w-max hover:bg-cyan-300/10 rounded px-10 py-7 text-cyan-300 hover:text-cyan-300 font-bold border-cyan-300 my-4'>
                <Icons.mail className='text-cyan-300' />
                Say hi!
             </Button>
