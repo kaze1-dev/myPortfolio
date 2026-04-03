@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
    return (
-      <section className='h-screen font-rounded tracking-tight flex justify-start px-34'>
+      <section className=' font-rounded tracking-tight flex justify-start px-34'>
          <div className=''>
             <h1 className='text-4xl tracking-tight font-bold text-slate-300 mb-10'>/ about me</h1>
             <p className='text-slate-400 text-lg leading-relaxed [word-spacing:0.3rem]'>
