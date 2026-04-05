@@ -3,7 +3,7 @@ import { Icons } from '../icons'
 
 const Projects = () => {
   return (
-    <section className='h-screen font-rounded tracking-tight px-34'>
+    <section className=' font-rounded tracking-tight px-34'>
       <h1 className='text-4xl tracking-tight font-bold text-slate-300 my-10'>/ Projects</h1>
      <div className='grid grid-cols-3 gap-2'>
       <div className='bg-[#112240] rounded-2xl px-8 pt-8 pb-20'>
