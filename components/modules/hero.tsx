@@ -4,7 +4,7 @@ import { Icons } from '../icons'
 
 const Hero = () => {
    return (
-      <section className='flex justify-center items-center h-screen'>
+      <section id='hero' className='flex justify-center items-center h-screen'>
          <div className='flex flex-col gap-6'>
             <h1 className='text-slate-300 text-6xl inline tracking-tight font-rounded'>
                hi, <span className='text-cyan-300 font-bold'>kaze</span> here.

@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
    return (
-      <section className=' font-rounded tracking-tight px-26'>
-         <div className=''>
+      <section id='about' className='max-h-screen font-rounded tracking-tight w-full'>
+         <div className='px-26'>
 
             <h1 className='text-4xl tracking-tight font-bold text-slate-300 mb-10'>/ about me</h1>
             <div className='flex gap-20'>
