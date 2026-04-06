@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import { Icons } from '../icons'
+import SpotLight from '../spotlight'
 
 const Hero = () => {
    return (
       <section id='hero' className='flex justify-center items-center h-screen'>
          <div className='flex flex-col gap-6'>
+            <SpotLight />
             <h1 className='text-slate-300 text-6xl inline tracking-tight font-rounded'>
                hi, <span className='text-cyan-300 font-bold'>kaze</span> here.
             </h1>

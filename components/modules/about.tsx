@@ -54,7 +54,7 @@ const About = () => {
                         <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>MONGODB</div>
                      </div>
                      <div>
-                        <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>HTML/CSS</div>
+                        <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>NODEJS</div>
                      </div>
                      <div>
                         <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>GIT</div>
@@ -65,7 +65,7 @@ const About = () => {
                         <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>GITHUB</div>
                      </div>
                      <div>
-                        <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>ENGLISH</div>
+                        <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>HTML/CSS</div>
                      </div>
                   </div>
                </div>
