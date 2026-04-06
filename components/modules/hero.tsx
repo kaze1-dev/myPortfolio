@@ -2,15 +2,15 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { Icons } from '../icons'
 import SpotLight from '../spotlight'
+import TypeWriter from '../typewriter'
 
 const Hero = () => {
    return (
       <section id='hero' className='flex justify-center items-center h-screen'>
          <div className='flex flex-col gap-6'>
             <SpotLight />
-            <h1 className='text-slate-300 text-6xl inline tracking-tight font-rounded'>
-               hi, <span className='text-cyan-300 font-bold'>kaze</span> here.
-            </h1>
+{/*             <h1 className='text-slate-300 text-6xl inline tracking-tight font-rounded'> */}
+               <TypeWriter />
             <p className='inline text-sm text-slate-400 font-rounded leading-relaxed'>
                Building high-performance web applications at the intersection of Next.js logic and<br /> robust Prisma backends, fueled by a love for clean code and anime.
             </p>

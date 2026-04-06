@@ -68,3 +68,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes breath-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-smooth-cursor {
+  animation: breath-blink 2s linear infinite;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
+}
