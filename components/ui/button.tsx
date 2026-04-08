@@ -55,19 +55,10 @@ function Button({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot.Root : "button";
-  const btn = useRef<HTMLButtonElement>(null)
-    useGSAP(() => {
-      gsap.from(btn.current, {
-          opacity: 0,
-          y: -20,
-          duration: 0.15,
-          delay: 2, 
-      })
-    }, {scope: btn})
+
 
   return (
     <Comp
-      ref={btn}
       data-slot="button"
       data-variant={variant}
       data-size={size}

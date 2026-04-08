@@ -9,24 +9,28 @@ const HeaderContent = () => {
    const container = useRef<HTMLDivElement>(null)
 
    useGSAP(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power1.out", duration: 0.5 } })
+      const tl = gsap.timeline()
       tl.from("#logo", {
          opacity: 0,
          y: -100,
-         duration: 0.15
+         duration: 0.5,
+         delay:2,
+         ease: "back.out(3)"
       })
          .from("nav a", {
             opacity: 0,
             y: -50,
-            stagger: 0.15,
-            duration: 0.15
+            stagger: 0.05,
+            duration: 0.5,
+            ease: "back.out(3)"
          }, "-=0.1")
          .from("#icons .icon", {
             opacity: 0,
             y: -50,
-            stagger: 0.15,
-            duration: 0.15
-         }, "-=0.1")
+            stagger: 0.05,
+            duration: 0.5,
+            ease: "back.out(3)"
+         }, "-=0.4")
    }, { scope: container })
    return (
       <div ref={container} className='flex justify-between w-full'>
