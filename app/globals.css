@@ -4,6 +4,25 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+::selection {
+  background-color: transparent;
+  color: #00ffff; 
+  
+  
+  text-shadow: 
+    0 0 5px #00ffff,   
+    0 0 10px #00ffff,  
+    0 0 20px #00ffff,  
+    0 0 40px #0088ff;  
+}
+
+p, h1, h2, span {
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

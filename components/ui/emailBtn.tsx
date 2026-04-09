@@ -15,15 +15,17 @@ const EmailBtn = () => {
          delay: 1.5,
          ease: "back.out(3)"
       })
+
+
    })
-  return (
+   return (
       <button id='mailBtn' className='flex  items-center'>
-         <div className='border border-cyan-300 text-cyan-300 px-6 py-4 font-bold font-rounded rounded-md flex justify-center items-center gap-2 hover:bg-cyan-300/10 transition-colors'>
-         <Icons.mail className='h-6 w-6 hover:cursor-pointer text-cyan-300' />
-         <h4>Say hi!</h4>
+         <div  className='border border-cyan-300 text-cyan-300 px-6 py-4 font-bold font-rounded rounded-md flex justify-center items-center gap-2 hover:bg-cyan-300/10  transition-all'>
+            <Icons.mail className='h-6 w-6 hover:cursor-pointer text-cyan-300' />
+            <h4>Say hi!</h4>
          </div>
       </button>
-  )
+   )
 }
 
 export default EmailBtn
