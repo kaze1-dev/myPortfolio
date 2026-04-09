@@ -14,7 +14,7 @@ const HeaderContent = () => {
          opacity: 0,
          y: -100,
          duration: 0.5,
-         delay:2,
+         delay:1,
          ease: "back.out(3)"
       })
          .from("nav a", {
@@ -34,7 +34,7 @@ const HeaderContent = () => {
    }, { scope: container })
    return (
       <div ref={container} className='flex justify-between w-full'>
-         <div className='flex gap-6'>
+         <div className='flex gap-6 z-100 w-full'>
             <a id='logo' href="#hero">
                <h1  className='text-slate-300 font-bold text-lg font-rounded tracking-tighter cursor-default hover:cursor-pointer'>Faisal Abbas</h1>
             </a>
