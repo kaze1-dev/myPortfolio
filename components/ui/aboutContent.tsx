@@ -30,17 +30,16 @@ const AboutContent = () => {
          ease: "back.out(3)",
          scrollTrigger: {
             trigger: "#aboutTitle",
-            start: "top 80%",
+            start: "top 100%",
          }
       })
 
       gsap.from(split.words, {
-         y: 20,
+         y: 50,
          opacity: 0,
          rotationX: -40,
          duration: 0.5,
-         stagger: 0.01,
-         ease: "back.out(2)",
+         ease: "power1.out",
          scrollTrigger: {
             trigger: split.words,
             start: "top 90%",
@@ -55,7 +54,7 @@ const AboutContent = () => {
          ease: "back.out(2)",
          scrollTrigger: {
             trigger: ".skillBox",
-            start: "top 60%"
+            start: "top 50%"
          }
       })
    }, { scope: aboutRef })
@@ -64,12 +63,11 @@ const AboutContent = () => {
 
          <h1 id="aboutTitle" ref={titleRef} className='text-4xl tracking-tight font-bold text-slate-300 mb-10'>/ about me</h1>
          <div className='flex gap-20'>
-            <div id='aboutIntro'>
-               <p className='text-slate-400 text-lg leading-relaxed [word-spacing:0.3rem]'>
+            <div >
+               <p id='aboutIntro' className='text-slate-400 text-lg leading-relaxed [word-spacing:0.3rem]'>
                   <span className='font-bold'>Computer Science Student</span> & <span className='font-bold'>Full-stack Developer</span> fueled by caffeine and <span className='font-bold'>90s anime.</span> I specialize in crafting high-performance apps using<span className='font-bold text-cyan-300'> Next.js</span> and <span className='font-bold text-cyan-300'>Prisma.</span> I trade the mouse for the CLI and light themes for Slate-950. Currently leveling up my <span className='font-bold text-cyan-300'>backend</span> architecture, one <span className='font-bold text-cyan-300'>PostgreSQL</span> query at a time.
                </p>
-
-               <p className='text-slate-400 text-lg leading-relaxed [word-spacing:0.3rem] mt-6'>
+               <p className='text-slate-400 text-lg [word-spacing:0.3rem] mt-6'>
                   Outside of code, I am a literary fiction lover, a professional daydreamer, and I spend way too much time debating the best anime of all time (spoiler: it's a tie between <span className='font-bold text-cyan-300'>Cowboy Bebop</span> and <span className='font-bold text-cyan-300'>Neon Genesis Evangelion.</span>)
                </p>
             </div>
