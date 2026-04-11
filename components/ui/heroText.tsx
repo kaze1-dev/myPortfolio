@@ -76,7 +76,7 @@ const HeroText = () => {
                alt='pic of me'
                width={250}
                height={250} 
-               className='rounded-full brightness-80'
+               className='rounded-full brightness-90'
                priority 
             />
          </div>
