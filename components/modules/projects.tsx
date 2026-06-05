@@ -4,7 +4,7 @@ import ProjectContent from '../ui/projectContent'
 
 const Projects = () => {
   return (
-    <section id='projects' className=' font-rounded tracking-tight px-26'>
+    <section id='projects' className=' font-rounded tracking-tight px-6 lg:px-14'>
       <ProjectContent />
     </section>
   )

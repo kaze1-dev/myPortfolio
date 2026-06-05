@@ -14,64 +14,20 @@ if (typeof window !== 'undefined') {
 }
 
 const AboutContent = () => {
-   const aboutRef = useRef<HTMLDivElement>(null)
-   const titleRef = useRef<HTMLHeadingElement>(null)
-
-
-   useGSAP(() => {
-      const split = new SplitText("#aboutIntro", {
-         type: "words"
-      })
-      gsap.from("#aboutTitle", {
-         opacity: 0,
-         duration: 0.5,
-         delay: 0.1,
-         y: 30,
-         ease: "back.out(3)",
-         scrollTrigger: {
-            trigger: "#aboutTitle",
-            start: "top 100%",
-         }
-      })
-
-      gsap.from(split.words, {
-         y: 50,
-         opacity: 0,
-         rotationX: -40,
-         duration: 0.5,
-         ease: "power1.out",
-         scrollTrigger: {
-            trigger: split.words,
-            start: "top 90%",
-         }
-      })
-
-      gsap.from(".skillBox", {
-         opacity: 0,
-         x: 100,
-         stagger: 0.05,
-         duration: 0.5,
-         ease: "back.out(2)",
-         scrollTrigger: {
-            trigger: ".skillBox",
-            start: "top 50%"
-         }
-      })
-   }, { scope: aboutRef })
    return (
-      <div ref={aboutRef} className='px-26 -z-10'>
+      <div className='px-6 lg:px-14'>
 
-         <h1 id="aboutTitle" ref={titleRef} className='text-4xl tracking-tight font-bold text-slate-300 mb-10'>/ about me</h1>
-         <div className='flex gap-20'>
-            <div >
-               <p id='aboutIntro' className='text-slate-400 text-lg leading-relaxed [word-spacing:0.3rem]'>
-                  <span className='font-bold'>Computer Science Student</span> & <span className='font-bold'>Full-stack Developer</span> fueled by caffeine and <span className='font-bold'>90s anime.</span> I specialize in crafting high-performance apps using<span className='font-bold text-cyan-300'> Next.js</span> and <span className='font-bold text-cyan-300'>Prisma.</span> I trade the mouse for the CLI and light themes for Slate-950. Currently leveling up my <span className='font-bold text-cyan-300'>backend</span> architecture, one <span className='font-bold text-cyan-300'>PostgreSQL</span> query at a time.
+         <h1 id="aboutTitle" className='text-2xl lg:text-4xl tracking-tight font-bold text-slate-300 mb-6 lg:mb-10'>/ about me</h1>
+         <div className='flex flex-col md:flex-row md:gap-20'>
+            <div className='mb-4'>
+               <p id='aboutIntro' className='text-slate-400 text-sm lg:text-lg leading-relaxed [word-spacing:0.3rem]'>
+                 I am a Full-Stack Engineer and Computer Science student based in Punjab | Rajanpur, dedicated to engineering high-performance applications from the ground up. Operating primarily within a terminal-driven Linux environment, I focus on building robust backend services and clean, modular architectures. I pair a highly disciplined technical workflow with a passion for literary fiction and analytical storytelling, always striving for depth and precision in both code and creative thinking.
                </p>
                <p className='text-slate-400 text-lg [word-spacing:0.3rem] mt-6'>
-                  Outside of code, I am a literary fiction lover, a professional daydreamer, and I spend way too much time debating the best anime of all time (spoiler: it's a tie between <span className='font-bold text-cyan-300'>Cowboy Bebop</span> and <span className='font-bold text-cyan-300'>Neon Genesis Evangelion.</span>)
+                  
                </p>
             </div>
-            <div className='flex flex-col gap-4 '>
+            <div className='flex flex-col justify-center gap-4 text-xs md:text-base md:mb-18'>
                <div className='flex text-cyan-300 font-bold gap-2 skillBox'>
                   <div className=''>
                      <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>TYPESCRIPT</div>
@@ -113,17 +69,6 @@ const AboutContent = () => {
                   </div>
                   <div>
                      <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>GIT</div>
-                  </div>
-               </div>
-               <div className='flex text-cyan-300 font-bold gap-2 skillBox'>
-                  <div className=''>
-                     <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>GITHUB</div>
-                  </div>
-                  <div>
-                     <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>HTML/CSS</div>
-                  </div>
-                  <div>
-                     <div className='border-cyan-300 border-solid border px-4 py-2 rounded-lg'>LINUX</div>
                   </div>
                </div>
             </div>

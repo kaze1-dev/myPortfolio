@@ -39,7 +39,7 @@ const HeaderContent = () => {
                <h1  className='text-slate-300 font-bold text-lg font-rounded tracking-tighter cursor-default hover:cursor-pointer'>Faisal Abbas</h1>
             </a>
 
-            <nav className='text-slate-300 tracking-tighter font-rounded font-bold text-sm flex gap-4 justify-center items-center'>
+            <nav className='text-slate-300 tracking-tighter font-rounded font-bold text-sm  gap-4 justify-center items-center hidden md:flex'>
                <a href="#hero">
                   <div className='cursor-default hover:text-cyan-300 hover:cursor-pointer'>Home</div>
                </a>

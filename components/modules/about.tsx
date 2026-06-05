@@ -3,7 +3,7 @@ import AboutContent from '../ui/aboutContent'
 
 const About = () => {
    return (
-      <section id='about' className='max-h-screen font-rounded tracking-tight w-full'>
+      <section id='about' className='font-rounded tracking-tight w-full'>
          <AboutContent />
       </section>
    )

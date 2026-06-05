@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { TextPlugin } from 'gsap/TextPlugin';
-import { SplitText } from 'gsap/SplitText'; 
+import { SplitText } from 'gsap/SplitText';
 import Image from 'next/image';
 import profile from '../../public/profile.webp';
 import EmailBtn from './emailBtn';
@@ -26,7 +26,7 @@ const HeroText = () => {
 
       const tl = gsap.timeline();
 
-    
+
       gsap.to("#cursor", {
          opacity: 0,
          repeat: -1,
@@ -34,7 +34,7 @@ const HeroText = () => {
          duration: 1
       });
 
-    
+
       tl.to("#heroTxt", {
          text: {
             value: "hi, <span class='text-cyan-300'>F</span><span class='text-cyan-300'>a</span><span class='text-cyan-300'>i</span><span class='text-cyan-300'>s</span><span class='text-cyan-300'>a</span><span class='text-cyan-300'>l</span> here.",
@@ -45,7 +45,7 @@ const HeroText = () => {
          ease: "power1.out"
       });
 
-     
+
       if (split) {
          tl.from(split.words, {
             y: 20,
@@ -68,9 +68,9 @@ const HeroText = () => {
    }, { scope: container });
 
    return (
-      <div ref={container} className='flex gap-25 w-full justify-between items-center'>
+      <div ref={container} className='flex w-full justify-center  items-center'>
 
-         <div ref={imgRef}>
+         {/* <div ref={imgRef}>
             <Image
                src={profile}
                alt='pic of me'
@@ -79,16 +79,16 @@ const HeroText = () => {
                className='rounded-full brightness-90'
                priority 
             />
-         </div>
+         </div> */}
 
-         <div className='flex flex-col gap-6'>
-            <h1 className='text-slate-300 text-6xl inline tracking-tight font-rounded'>
+         <div className='flex flex-col items-center text-center max-w-2xl px-4'>
+            <h1 className='text-slate-300 text-4xl lg:text-6xl tracking-tight font-rounded mb-4'>
                <span id='heroTxt'></span>
                <span id='cursor' className='text-cyan-300 font-bold font-mono'>_</span>
             </h1>
 
-            <p id='heroParagraph' className='inline text-sm text-slate-400 font-rounded leading-relaxed'>
-               Building high-performance web applications at the intersection of Next.js logic and<br /> robust Prisma backends, fueled by a love for clean code and anime.
+            <p id='heroParagraph' className='text-xs text-slate-400 font-rounded leading-relaxed mb-6'>
+               Full-Stack Engineer | Building high-performance web applications with<br className='hidden lg:block' /> Next.js & Prisma. Driven by clean code, robust backend architecture, and great storytelling.
             </p>
             <EmailBtn />
          </div>
