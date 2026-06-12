@@ -41,8 +41,12 @@ const ProjectContent = () => {
           <div className='flex justify-between items-center'>
             <Icons.folder className='w-8 h-8 text-cyan-300' />
             <div className='flex gap-6 items-center '>
-              <Icons.gitHub className='w-6 h-6 text-slate-300 hover:cursor-pointer hover:text-cyan-300' />
-              <ExternalLink className='w-6 h-6 text-slate-300 hover:cursor-pointer hover:text-cyan-300' />
+              <a target='_blank' href="https://github.com/kaze1-dev/Analytics_Dashboard">
+                <Icons.gitHub className='w-6 h-6 text-slate-300 hover:cursor-pointer hover:text-cyan-300' />
+              </a>
+              <a href="https://analytics-dashboard-nu-mocha.vercel.app/" target='_blank'>
+                <ExternalLink className='w-6 h-6 text-slate-300 hover:cursor-pointer hover:text-cyan-300' />
+              </a>
             </div>
           </div>
           <h2 className='text-xl font-bold text-slate-300 mt-8 mb-6'>Analytics Dashboard</h2>
